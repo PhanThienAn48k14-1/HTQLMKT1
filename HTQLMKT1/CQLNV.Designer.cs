@@ -42,6 +42,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnLUU = new System.Windows.Forms.Button();
+            this.btnBACK = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -164,12 +165,27 @@
             this.btnLUU.UseVisualStyleBackColor = true;
             this.btnLUU.Click += new System.EventHandler(this.btnLUU_Click);
             // 
+            // btnBACK
+            // 
+            this.btnBACK.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnBACK.FlatAppearance.BorderSize = 0;
+            this.btnBACK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBACK.Image = global::HTQLMKT1.Properties.Resources.angle_double_small_left__1_;
+            this.btnBACK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBACK.Location = new System.Drawing.Point(2, 3);
+            this.btnBACK.Name = "btnBACK";
+            this.btnBACK.Size = new System.Drawing.Size(72, 37);
+            this.btnBACK.TabIndex = 7;
+            this.btnBACK.UseVisualStyleBackColor = false;
+            this.btnBACK.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // CQLNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(1005, 712);
+            this.Controls.Add(this.btnBACK);
             this.Controls.Add(this.btnLUU);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtMATK);
@@ -210,5 +226,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnLUU;
+        private System.Windows.Forms.Button btnBACK;
     }
 }

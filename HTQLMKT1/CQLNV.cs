@@ -74,7 +74,7 @@ namespace HTQLMKT1
 
         private void CQLNV_FormClosing(object sender, FormClosingEventArgs e)
         {
-            MessageBox.Show("Bạn đã đóng form thêm nhân viên mới.", "Thông báo");
+         //   MessageBox.Show("Bạn đã đóng form thêm nhân viên mới.", "Thông báo");
         }
 
         private void btnHUY_Click(object sender, EventArgs e)
@@ -128,12 +128,13 @@ namespace HTQLMKT1
 
             // Kiểm tra dữ liệu từ cơ sở dữ liệu: Kiểm tra số điện thoại, mã nhân viên và mã tài khoản đã tồn tại chưa
             string queryCheck = @"
-            IF EXISTS (SELECT 1 FROM nhanvien WHERE manv = @MANV)
-                SELECT 'Mã nhân viên đã tồn tại' AS Message;
-            ELSE IF EXISTS (SELECT 1 FROM nhanvien WHERE matk = @MATK)
-                SELECT 'Mã tài khoản đã tồn tại' AS Message;
+            IF NOT EXISTS (SELECT 1 FROM TaiKhoan WHERE matk = @MATK)
+                SELECT N'Mã tài khoản không tồn tại' AS Message;
+
+            
+            
             ELSE IF EXISTS (SELECT 1 FROM nhanvien WHERE sdt = @SDT)
-                SELECT 'Số điện thoại đã tồn tại' AS Message;
+                SELECT N'Số điện thoại đã tồn tại' AS Message;
             ELSE
                 SELECT 'OK' AS Message;";
 
@@ -242,6 +243,15 @@ namespace HTQLMKT1
             return manvNew;
         }
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            // Đóng form hiện tại (CQLNV)
+            this.Close();
+
+            // Tạo và hiển thị form NhanVien
+            NhanVien frmNhanVien = new NhanVien();
+            frmNhanVien.Show();
+        }
     }
 
 }

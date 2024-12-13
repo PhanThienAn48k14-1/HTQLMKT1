@@ -42,6 +42,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtMANV = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnBACK = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -162,12 +163,27 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Mã nhân viên";
             // 
+            // btnBACK
+            // 
+            this.btnBACK.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnBACK.FlatAppearance.BorderSize = 0;
+            this.btnBACK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBACK.Image = global::HTQLMKT1.Properties.Resources.angle_double_small_left__1_;
+            this.btnBACK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBACK.Location = new System.Drawing.Point(2, 1);
+            this.btnBACK.Name = "btnBACK";
+            this.btnBACK.Size = new System.Drawing.Size(72, 37);
+            this.btnBACK.TabIndex = 28;
+            this.btnBACK.UseVisualStyleBackColor = false;
+            this.btnBACK.Click += new System.EventHandler(this.btnBACK_Click);
+            // 
             // UQLNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(1012, 714);
+            this.Controls.Add(this.btnBACK);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtMATK);
@@ -208,5 +224,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtMANV;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnBACK;
     }
 }

@@ -194,9 +194,18 @@ namespace HTQLMKT1
 
         private void DQLNV_FormClosing_1(object sender, FormClosingEventArgs e)
         {
-    
-            MessageBox.Show("Bạn đã đóng form xóa thông tin nhân viên.", "Thông báo");
+
+            //MessageBox.Show("Bạn đã đóng form xóa thông tin nhân viên.", "Thông báo");
         }
-    
+
+        private void btnBACK_Click(object sender, EventArgs e)
+        {
+            // Đóng form hiện tại (CQLNV)
+            this.Close();
+
+            // Tạo và hiển thị form NhanVien
+            NhanVien frmNhanVien = new NhanVien();
+            frmNhanVien.Show();
+        }
     }
 }
