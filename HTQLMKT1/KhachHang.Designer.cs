@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
             this.SuspendLayout();
             // 
             // KhachHang
@@ -35,6 +36,7 @@
             this.ClientSize = new System.Drawing.Size(835, 478);
             this.Name = "KhachHang";
             this.Load += new System.EventHandler(this.KhachHang_Load);
+
             this.ResumeLayout(false);
 
         }
@@ -52,7 +54,9 @@
         private System.Windows.Forms.ToolStripMenuItem xemDịchVụToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hợpĐồngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem xemHợpĐồngToolStripMenuItem;
+
         private System.Windows.Forms.ToolStripMenuItem dịchVụMarketingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem xemDịchVụMarketingToolStripMenuItem;
+
     }
 }

@@ -17,25 +17,35 @@ namespace HTQLMKT1
             InitializeComponent();
         }
 
-        private void xemThôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
+        private string username; // Biến lưu tên đăng nhập
+
+        public KhachHang(string sTenDN)
         {
-            RTTCN rTTCN = new RTTCN();
-            rTTCN.MdiParent = this;
-            rTTCN.Show();
+            InitializeComponent();
+            username = sTenDN; // Gán tên đăng nhập từ constructor
         }
 
+        private void xemThôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var XemTTKH = new RTTCN(username); // Truyền tên đăng nhập
+            XemTTKH.Show();
+            this.Hide();
+        }
+
+        // Trong KhachHang.cs
         private void sửaThôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            UTTCN uTTCN = new UTTCN();
-            uTTCN.MdiParent = this;
-            uTTCN.Show();
+            var SuaTTKH = new UTTCN(username); // Truyền tên đăng nhập vào UTTCN
+            SuaTTKH.Show();
+            this.Hide();
         }
+
 
         private void xóaThôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DTTCN dTTCN = new DTTCN();
-            dTTCN.MdiParent = this;
-            dTTCN.Show();
+            var XoaTTKH = new DTTCN(username); // Nếu DTTCN cũng cần username
+            XoaTTKH.Show();
+            this.Hide();
         }
 
         private void xemTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
@@ -64,5 +74,7 @@ namespace HTQLMKT1
         {
 
         }
+
+
     }
 }

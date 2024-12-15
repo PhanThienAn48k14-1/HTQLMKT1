@@ -16,7 +16,17 @@ namespace HTQLMKT1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new NhanVien());
+
+            Application.Run(new FrmLogin());
+            //Application.Run(new FrmDK());
+            //Application.Run(new NhanVien());
+            //Application.Run(new DQLKH());
+            //Application.Run(new KhachHang());
+
+
+
+
+
         }
     }
 }
