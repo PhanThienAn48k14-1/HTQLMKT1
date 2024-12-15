@@ -59,5 +59,10 @@ namespace HTQLMKT1
             rTTHD .Show();
 
         }
+
+        private void KhachHang_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
