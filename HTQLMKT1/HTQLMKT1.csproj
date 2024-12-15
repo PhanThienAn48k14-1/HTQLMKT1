@@ -126,6 +126,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="RQLDV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +221,15 @@
     <Compile Include="UTTCN.Designer.cs">
       <DependentUpon>UTTCN.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CQLKH.resx">
+      <DependentUpon>CQLKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CQLNV.resx">
+      <DependentUpon>CQLNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DQLNV.resx">
+      <DependentUpon>DQLNV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KhachHang.resx">
       <DependentUpon>KhachHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -224,13 +238,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="RQLNV.resx">
+      <DependentUpon>RQLNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UQLNV.resx">
+      <DependentUpon>UQLNV.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -243,6 +259,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angle-double-small-left %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
