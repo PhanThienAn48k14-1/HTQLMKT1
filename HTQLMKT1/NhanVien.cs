@@ -31,6 +31,10 @@ namespace HTQLMKT1
             RQLNV  rQLNV = new RQLNV();
             rQLNV.MdiParent = this;
             rQLNV.Show();
+
+            var rqlnv = new RQLNV(); // Tạo đối tượng form mới
+            rqlnv.Show(); // Hiển thị form mới
+            this.Hide(); // Ẩn form hiện tại
         }
 
         private void tạoThêmThôngTinKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
@@ -76,6 +80,12 @@ namespace HTQLMKT1
             CQLNV cQLNV = new CQLNV();
             cQLNV.MdiParent = this;
             cQLNV.Show();
+
+            var cqlnv = new CQLNV(); // Tạo đối tượng form mới
+            cqlnv.Show(); // Hiển thị form mới
+            this.Hide(); // Ẩn form hiện tại
+
+
         }
 
         private void sửaThôngTinNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
@@ -83,6 +93,10 @@ namespace HTQLMKT1
             UQLNV uQLNV = new UQLNV();
             uQLNV.MdiParent = this;
             uQLNV.Show();
+
+            var uqlnv = new UQLNV();
+            uqlnv.Show();
+            this.Hide();
         }
 
         private void xóaThôngTinNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
@@ -90,6 +104,10 @@ namespace HTQLMKT1
             DQLNV dQLNV = new DQLNV();
             dQLNV.MdiParent = this;
             dQLNV.Show();
+
+            var dqlnv = new DQLNV();
+            dqlnv.Show();
+            this.Hide();
         }
 
         private void tạoThêmThôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)

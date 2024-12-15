@@ -245,6 +245,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="RQLDV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -335,6 +340,7 @@
     <Compile Include="UTTCN.Designer.cs">
       <DependentUpon>UTTCN.cs</DependentUpon>
     </Compile>
+
     <EmbeddedResource Include="DQLKH.resx">
       <DependentUpon>DQLKH.cs</DependentUpon>
     </EmbeddedResource>
@@ -346,6 +352,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="KhachHang.resx">
       <DependentUpon>KhachHang.cs</DependentUpon>
@@ -355,13 +362,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="RQLNV.resx">
+      <DependentUpon>RQLNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UQLNV.resx">
+      <DependentUpon>UQLNV.cs</DependentUpon>
+    </EmbeddedResource>
+
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+
     <EmbeddedResource Include="RQLKH.resx">
       <DependentUpon>RQLKH.cs</DependentUpon>
     </EmbeddedResource>
@@ -375,6 +390,7 @@
       <DependentUpon>UTTCN.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -387,6 +403,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angle-double-small-left %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
