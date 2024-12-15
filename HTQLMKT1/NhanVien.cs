@@ -17,6 +17,15 @@ namespace HTQLMKT1
             InitializeComponent();
         }
 
+        private void NhanVien_Load(object sender, EventArgs e)
+        {
+            string tenDangNhap = Global.CurrentUser; // Lấy tên đăng nhập từ biến toàn cục
+            if (!string.IsNullOrEmpty(tenDangNhap))
+            {
+                this.Text = $"Nhân viên - {tenDangNhap}"; // Hiển thị tên đăng nhập trên tiêu đề form
+            }
+        }
+
         private void xemThôngTinNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RQLNV  rQLNV = new RQLNV();
@@ -33,24 +42,33 @@ namespace HTQLMKT1
 
         private void xemThôngTinKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            RQLKH rQLKH = new RQLKH();
-            rQLKH.MdiParent = this;
+            //RQLKH rQLKH = new RQLKH();
+            //rQLKH.MdiParent = this;
+            //rQLKH.Show();
+            var rQLKH = new RQLKH();
             rQLKH.Show();
+            this.Hide();
+
         }
 
         private void sửaThôngTinKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            UQLKH uQLKH = new UQLKH();
-            uQLKH.MdiParent = this;
+            //UQLKH uQLKH = new UQLKH();
+            //uQLKH.MdiParent = this;
+            //uQLKH.Show();
+            var uQLKH = new txtEmail();
             uQLKH.Show();
-
+            this.Hide();
         }
 
         private void xóaThôngTinKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DQLKH dQLKH = new DQLKH();
-            dQLKH.MdiParent = this;
+            //DQLKH dQLKH = new DQLKH();
+            //dQLKH.MdiParent = this;
+            //dQLKH.Show();
+            var dQLKH = new DQLKH();
             dQLKH.Show();
+            this.Hide();
         }
 
         private void tạoThêmThôngTinNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
@@ -156,6 +174,30 @@ namespace HTQLMKT1
             DQLDV dQLDV = new DQLDV();
             dQLDV .MdiParent = this;
             dQLDV .Show();
+        }
+
+        private void NhanVien_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+            "Bạn có muốn đăng xuất không?", // Nội dung thông báo
+            "Xác nhận đăng xuất",           // Tiêu đề thông báo
+            MessageBoxButtons.YesNo,        // Hiển thị nút Yes và No
+            MessageBoxIcon.Question         // Icon dấu hỏi
+            );
+
+            // Kiểm tra kết quả người dùng chọn
+            if (result == DialogResult.Yes)
+            {
+                // Nếu chọn Yes thì thực hiện đăng xuất
+                var DX = new FrmLogin();
+                DX.Show();
+                this.Hide();
+            }
         }
     }
 }
