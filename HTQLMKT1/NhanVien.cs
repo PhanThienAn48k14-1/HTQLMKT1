@@ -168,30 +168,40 @@ namespace HTQLMKT1
 
         private void tạoThêmDịchVụMarketingToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CQLDV cQLDV = new CQLDV();
-            cQLDV .MdiParent = this;
-            cQLDV .Show();
+            
+            var dCQLDV = new CQLDV();
+            dCQLDV.Show();
+            this.Hide();
         }
 
         private void xemThôngTinDịchVụMarketingToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            RQLDV rQLDV = new RQLDV();
+            /*RQLDV rQLDV = new RQLDV();
             rQLDV .MdiParent = this;
-            rQLDV .Show();
+            rQLDV .Show();*/
+            var dRQLDV = new RQLDV();
+            dRQLDV.Show();
+            this.Hide();
         }
 
         private void sửaThôngTinDịchVụMarketingToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            UQLDV uQLDV = new UQLDV();
+            /*UQLDV uQLDV = new UQLDV();
             uQLDV .MdiParent = this;
-            uQLDV .Show();
+            uQLDV .Show();*/
+            var dUQLDV = new UQLDV();
+            dUQLDV.Show();
+            this.Hide();
         }
 
         private void xóaDịchVụMarketingToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DQLDV dQLDV = new DQLDV();
+            /*DQLDV dQLDV = new DQLDV();
             dQLDV .MdiParent = this;
-            dQLDV .Show();
+            dQLDV .Show();*/
+            var dDQLDV = new DQLDV();
+            dDQLDV.Show();
+            this.Hide();
         }
 
         private void NhanVien_Load_1(object sender, EventArgs e)

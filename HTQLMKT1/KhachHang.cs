@@ -75,27 +75,6 @@ namespace HTQLMKT1
 
         }
 
-        private void BTNDangXuat_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show(
-            "Bạn có muốn đăng xuất không?", // Nội dung thông báo
-            "Xác nhận đăng xuất",           // Tiêu đề thông báo
-            MessageBoxButtons.YesNo,        // Hiển thị nút Yes và No
-            MessageBoxIcon.Question         // Icon dấu hỏi
-            );
-
-            // Kiểm tra kết quả người dùng chọn
-            if (result == DialogResult.Yes)
-            {
-                // Nếu chọn Yes thì thực hiện đăng xuất
-                var DX = new FrmLogin();
-                DX.Show();
-                this.Hide();
-            }
-        }
-
-        // Trong KhachHang.cs
-
 
     }
 }

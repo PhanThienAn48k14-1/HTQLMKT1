@@ -341,17 +341,11 @@
       <DependentUpon>UTTCN.cs</DependentUpon>
     </Compile>
 
-    <EmbeddedResource Include="DQLKH.resx">
-      <DependentUpon>DQLKH.cs</DependentUpon>
+    <EmbeddedResource Include="CQLDV.resx">
+      <DependentUpon>CQLDV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DTTCN.resx">
-      <DependentUpon>DTTCN.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmDK.resx">
-      <DependentUpon>FrmDK.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmLogin.resx">
-      <DependentUpon>FrmLogin.cs</DependentUpon>
+    <EmbeddedResource Include="DQLDV.resx">
+      <DependentUpon>DQLDV.cs</DependentUpon>
 
     </EmbeddedResource>
     <EmbeddedResource Include="KhachHang.resx">
@@ -377,19 +371,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
 
-    <EmbeddedResource Include="RQLKH.resx">
-      <DependentUpon>RQLKH.cs</DependentUpon>
+    <EmbeddedResource Include="RQLDV.resx">
+      <DependentUpon>RQLDV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RTTCN.resx">
-      <DependentUpon>RTTCN.cs</DependentUpon>
+    <EmbeddedResource Include="UQLDV.resx">
+      <DependentUpon>UQLDV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UQLKH.resx">
-      <DependentUpon>UQLKH.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UTTCN.resx">
-      <DependentUpon>UTTCN.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="packages.config" />
 
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
