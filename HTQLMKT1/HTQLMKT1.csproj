@@ -216,6 +216,12 @@
     <Compile Include="UTTCN.Designer.cs">
       <DependentUpon>UTTCN.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CQLHD.resx">
+      <DependentUpon>CQLHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DQLHD.resx">
+      <DependentUpon>DQLHD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KhachHang.resx">
       <DependentUpon>KhachHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -231,6 +237,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RQLHD.resx">
+      <DependentUpon>RQLHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RTTHD.resx">
+      <DependentUpon>RTTHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UQLHD.resx">
+      <DependentUpon>UQLHD.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
