@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{36640FD4-F669-4C0E-A73C-F4BCE0DE4CA8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HTQLMKT1</RootNamespace>
+    <AssemblyName>HTQLMKT1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CQLDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CQLDV.Designer.cs">
+      <DependentUpon>CQLDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CQLHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CQLHD.Designer.cs">
+      <DependentUpon>CQLHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CQLKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CQLKH.Designer.cs">
+      <DependentUpon>CQLKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CQLNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CQLNV.Designer.cs">
+      <DependentUpon>CQLNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CQLTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CQLTK.Designer.cs">
+      <DependentUpon>CQLTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DQLDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DQLDV.Designer.cs">
+      <DependentUpon>DQLDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DQLHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DQLHD.Designer.cs">
+      <DependentUpon>DQLHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DQLKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DQLKH.Designer.cs">
+      <DependentUpon>DQLKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DQLNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DQLNV.Designer.cs">
+      <DependentUpon>DQLNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DQLTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DQLTK.Designer.cs">
+      <DependentUpon>DQLTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTTCN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DTTCN.Designer.cs">
+      <DependentUpon>DTTCN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVien.Designer.cs">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachHang.Designer.cs">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RQLDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RQLDV.Designer.cs">
+      <DependentUpon>RQLDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RQLHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RQLHD.Designer.cs">
+      <DependentUpon>RQLHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RQLKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RQLKH.Designer.cs">
+      <DependentUpon>RQLKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RQLNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RQLNV.Designer.cs">
+      <DependentUpon>RQLNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RQLTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RQLTK.Designer.cs">
+      <DependentUpon>RQLTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RTTCN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RTTCN.Designer.cs">
+      <DependentUpon>RTTCN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RTTDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RTTDV.Designer.cs">
+      <DependentUpon>RTTDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RTTHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RTTHD.Designer.cs">
+      <DependentUpon>RTTHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RTTTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RTTTK.Designer.cs">
+      <DependentUpon>RTTTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UQLDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UQLDV.Designer.cs">
+      <DependentUpon>UQLDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UQLHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UQLHD.Designer.cs">
+      <DependentUpon>UQLHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UQLKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UQLKH.Designer.cs">
+      <DependentUpon>UQLKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UQLNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UQLNV.Designer.cs">
+      <DependentUpon>UQLNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UQLTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UQLTK.Designer.cs">
+      <DependentUpon>UQLTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UTTCN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UTTCN.Designer.cs">
+      <DependentUpon>UTTCN.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CQLTK.resx">
+      <DependentUpon>CQLTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DQLTK.resx">
+      <DependentUpon>DQLTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhachHang.resx">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien.resx">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RQLTK.resx">
+      <DependentUpon>RQLTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RTTTK.resx">
+      <DependentUpon>RTTTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UQLTK.resx">
+      <DependentUpon>UQLTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imap.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imapmo.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

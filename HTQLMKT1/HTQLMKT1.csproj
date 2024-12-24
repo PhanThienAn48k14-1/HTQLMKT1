@@ -112,6 +112,16 @@
     <Compile Include="DTTCN.Designer.cs">
       <DependentUpon>DTTCN.cs</DependentUpon>
     </Compile>
+    <Compile Include="HTQLYMKTDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HTQLYMKTDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HTQLYMKTDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HTQLYMKTDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="NhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +226,12 @@
     <Compile Include="UTTCN.Designer.cs">
       <DependentUpon>UTTCN.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CQLTK.resx">
+      <DependentUpon>CQLTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DQLTK.resx">
+      <DependentUpon>DQLTK.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KhachHang.resx">
       <DependentUpon>KhachHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,7 +246,39 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RQLTK.resx">
+      <DependentUpon>RQLTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RTTTK.resx">
+      <DependentUpon>RTTTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UQLTK.resx">
+      <DependentUpon>UQLTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="HTQLYMKTDataSet.xsc">
+      <DependentUpon>HTQLYMKTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HTQLYMKTDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HTQLYMKTDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HTQLYMKTDataSet.xss">
+      <DependentUpon>HTQLYMKTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HTQLYMKTDataSet1.xsc">
+      <DependentUpon>HTQLYMKTDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HTQLYMKTDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HTQLYMKTDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HTQLYMKTDataSet1.xss">
+      <DependentUpon>HTQLYMKTDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -243,6 +291,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imap.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imapmo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
