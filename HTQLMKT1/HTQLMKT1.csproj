@@ -71,7 +71,9 @@
     <Reference Include="Microsoft.IdentityModel.Tokens, Version=6.35.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.IdentityModel.Tokens.6.35.0\lib\net472\Microsoft.IdentityModel.Tokens.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
@@ -163,12 +165,6 @@
     </Compile>
     <Compile Include="CQLHD.Designer.cs">
       <DependentUpon>CQLHD.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CQLKH.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CQLKH.Designer.cs">
-      <DependentUpon>CQLKH.cs</DependentUpon>
     </Compile>
     <Compile Include="CQLNV.cs">
       <SubType>Form</SubType>
@@ -340,13 +336,14 @@
     <Compile Include="UTTCN.Designer.cs">
       <DependentUpon>UTTCN.cs</DependentUpon>
     </Compile>
-
     <EmbeddedResource Include="CQLDV.resx">
       <DependentUpon>CQLDV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DQLDV.resx">
       <DependentUpon>DQLDV.cs</DependentUpon>
-
+    </EmbeddedResource>
+    <EmbeddedResource Include="DQLTK.resx">
+      <DependentUpon>DQLTK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KhachHang.resx">
       <DependentUpon>KhachHang.cs</DependentUpon>
@@ -359,25 +356,31 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="RQLHD.resx">
+      <DependentUpon>RQLHD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RQLNV.resx">
       <DependentUpon>RQLNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RTTDV.resx">
+      <DependentUpon>RTTDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RTTHD.resx">
+      <DependentUpon>RTTHD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UQLNV.resx">
       <DependentUpon>UQLNV.cs</DependentUpon>
     </EmbeddedResource>
-
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-
     <EmbeddedResource Include="RQLDV.resx">
       <DependentUpon>RQLDV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UQLDV.resx">
       <DependentUpon>UQLDV.cs</DependentUpon>
     </EmbeddedResource>
-
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

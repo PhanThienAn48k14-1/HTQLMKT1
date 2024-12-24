@@ -7,7 +7,7 @@ namespace HTQLMKT1
 {
     public partial class DQLKH : Form
     {
-        private string sCon = "Data Source=PC\\MSSQLSERVER01;Initial Catalog=HTQLYMKT;Integrated Security=True;";
+        private string sCon = "Data Source=DESKTOP-74S139L;Initial Catalog = HTQLYMKT1; Integrated Security = True;";
         private string username = "";
         public DQLKH()
         {

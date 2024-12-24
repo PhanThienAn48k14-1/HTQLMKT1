@@ -1,54 +1,72 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HTQLMKT1
 {
     public partial class RTTHD : Form
     {
-        public RTTHD()
+        private string username;
+
+        public RTTHD(string sTenDN)
         {
             InitializeComponent();
+            username = sTenDN; // Nhận tên đăng nhập từ form trước đó
         }
 
-        private void btnXemMAHDKH_Click(object sender, EventArgs e)
+        private void RTTHD_Load(object sender, EventArgs e)
         {
-            string SMAHD = txtMAHDKH.Text;
+            LoadData();
+        }
 
-
-            // Chuỗi kết nối (thay thế bằng chuỗi kết nối của bạn)
-            string connectionString = "Data Source=DESKTOP-74S139L;Initial Catalog=HTQLYMKT;Integrated Security=True";
-
-
+        private void LoadData()
+        {
+            string connectionString = "Data Source=DESKTOP-74S139L;Initial Catalog=HTQLYMKT1;Integrated Security=True;";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sQuery = "SELECT * FROM HopDong WHERE MAHD=@MaHD";
-                SqlCommand command = new SqlCommand(sQuery, connection);
+                string sQuery = @"
+                    DECLARE @makh VARCHAR(10);
+                    SELECT @makh = makh
+                    FROM TaiKhoan
+                    WHERE TENDANGNHAP = @tendn;
 
-                // Khai báo tham số trước khi thực thi
-                command.Parameters.AddWithValue("@MaHD", SMAHD);
+                    SELECT * 
+                    FROM HopDong
+                    WHERE MAKH = @makh;";
+
+                SqlCommand command = new SqlCommand(sQuery, connection);
+                command.Parameters.AddWithValue("@tendn", username);
 
                 try
                 {
                     connection.Open();
+
                     SqlDataAdapter adapter = new SqlDataAdapter(command);
                     DataSet ds = new DataSet();
                     adapter.Fill(ds, "HopDong");
-                    dataGridView1.DataSource = ds.Tables["HopDong"];
+
+                    if (ds.Tables["HopDong"].Rows.Count > 0)
+                    {
+                        dataGridView1.DataSource = ds.Tables["HopDong"];
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không tìm thấy hợp đồng nào cho tên đăng nhập này.");
+                    }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Xảy ra lỗi trong quá trình kết nối DB: " + ex.Message);
+                    MessageBox.Show("Lỗi xảy ra trong quá trình truy vấn:\n" + ex.Message);
                 }
-                connection.Close();
             }
+        }
+
+        private void btnQL_Click(object sender, EventArgs e)
+        {
+            var khachHangForm = new KhachHang(username); // Quay lại form Khách Hàng
+            khachHangForm.Show();
+            this.Hide();
         }
     }
 }

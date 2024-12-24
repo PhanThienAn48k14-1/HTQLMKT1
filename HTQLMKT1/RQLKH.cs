@@ -14,7 +14,7 @@ namespace HTQLMKT1
 {
     public partial class RQLKH : Form
     {
-        String sCon = "Data Source=PC\\MSSQLSERVER01;Initial Catalog=HTQLYMKT;Integrated Security=True;";
+        String sCon = "Data Source=DESKTOP-74S139L;Initial Catalog = HTQLYMKT1; Integrated Security = True;";
 
 
         public RQLKH()

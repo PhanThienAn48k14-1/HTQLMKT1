@@ -13,7 +13,7 @@ namespace HTQLMKT1
 {
     public partial class CQLDV : Form
     {
-        string sCon = "Data Source=HOANGOANH\\MSSQLSERVER01;Initial Catalog=HTQLYMKT;Integrated Security=True;";
+        String sCon = "Data Source=DESKTOP-74S139L;Initial Catalog = HTQLYMKT1; Integrated Security = True;";
         public CQLDV()
         {
             InitializeComponent();

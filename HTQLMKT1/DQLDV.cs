@@ -13,7 +13,7 @@ namespace HTQLMKT1
 {
     public partial class DQLDV : Form
     {
-        string sCon = "Data Source=HOANGOANH\\MSSQLSERVER01;Initial Catalog=HTQLYMKT;Integrated Security=True;";
+        string sCon = "Data Source=DESKTOP-74S139L;Initial Catalog = HTQLYMKT1; Integrated Security = True;";
         public DQLDV()
         {
             

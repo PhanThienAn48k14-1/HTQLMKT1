@@ -25,19 +25,15 @@ namespace HTQLMKT1
             username = sTenDN; // Gán tên đăng nhập từ constructor
         }
 
-        private void xemThôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var XemTTKH = new RTTCN(username); // Truyền tên đăng nhập
-            XemTTKH.Show();
-            this.Hide();
-        }
+        //private void xemThôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+           
+        //}
 
         // Trong KhachHang.cs
         private void sửaThôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var SuaTTKH = new UTTCN(username); // Truyền tên đăng nhập vào UTTCN
-            SuaTTKH.Show();
-            this.Hide();
+            
         }
 
 
@@ -57,16 +53,12 @@ namespace HTQLMKT1
 
         private void xemDịchVụToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            RTTDV rTTDV = new RTTDV();
-            rTTDV.MdiParent = this;
-            rTTDV.Show();
+
         }
 
         private void xemHợpĐồngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            RTTHD rTTHD = new RTTHD();
-            rTTHD.MdiParent = this;
-            rTTHD .Show();
+            
 
         }
 
@@ -75,6 +67,37 @@ namespace HTQLMKT1
 
         }
 
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            
+        }
 
+        private void XemTTCN_Click(object sender, EventArgs e)
+        {
+            var XemTTKH = new RTTCN(username); // Truyền tên đăng nhập
+            XemTTKH.Show();
+            this.Hide();
+        }
+
+        private void UTTCN_Click(object sender, EventArgs e)
+        {
+            var SuaTTKH = new UTTCN(username); // Truyền tên đăng nhập vào UTTCN
+            SuaTTKH.Show();
+            this.Hide();
+        }
+
+        private void RTTHD_Click(object sender, EventArgs e)
+        {
+            var XemTTHD= new RTTHD(username); // Truyền tên đăng nhập
+            XemTTHD.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+            var XemTTDV = new RTTDV(username); // Truyền tên đăng nhập
+            XemTTDV.Show();
+            this.Hide();
+        }
     }
 }

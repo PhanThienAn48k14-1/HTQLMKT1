@@ -36,7 +36,7 @@ namespace HTQLMKT1
         private void btnSua_Click(object sender, EventArgs e)
         {
             //Bước 1
-            string sCon = "Data Source=DESKTOP-74S139L;Initial Catalog=HTQLYMKT;Integrated Security=True";
+            string sCon = "Data Source=DESKTOP-74S139L;Initial Catalog = HTQLYMKT1; Integrated Security = True;";
             SqlConnection con = new SqlConnection(sCon);
             try
             {

@@ -20,7 +20,7 @@ namespace HTQLMKT1
 
         private void BTNLogin_Click(object sender, EventArgs e)
         {
-            string sCon = "Data Source=PC\\MSSQLSERVER01;Initial Catalog=HTQLYMKT;Integrated Security=True;";
+            string sCon = "Data Source=DESKTOP-74S139L;Initial Catalog = HTQLYMKT1; Integrated Security = True;";
             using (SqlConnection con = new SqlConnection(sCon))
             {
                 try

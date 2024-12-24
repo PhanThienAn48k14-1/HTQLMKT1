@@ -37,12 +37,7 @@ namespace HTQLMKT1
             this.Hide(); // Ẩn form hiện tại
         }
 
-        private void tạoThêmThôngTinKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            CQLKH cQLKH = new CQLKH();
-            cQLKH.MdiParent = this;
-            cQLKH.Show();
-        }
+
 
         private void xemThôngTinKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {

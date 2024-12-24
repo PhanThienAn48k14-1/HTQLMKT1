@@ -12,7 +12,7 @@ namespace HTQLMKT1
 {
     public partial class UQLNV : Form
     {
-        string sCon = "Data Source=LAPTOP-C240ING2\\MSSQLSERVER_DEV;Initial Catalog=HTQLYMKT;Integrated Security=True;TrustServerCertificate=True";
+        String sCon = "Data Source=DESKTOP-74S139L;Initial Catalog = HTQLYMKT1; Integrated Security = True;";
         public UQLNV()
         {
             InitializeComponent();
